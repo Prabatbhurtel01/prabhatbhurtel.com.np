@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prabhat Bhurtel — Creative Technologist</title>
+  <meta name="description" content="Prabhat Bhurtel — BSIT Student, Startup Entrepreneur, Freelance Video Editor, AI & Data Analytics Learner. Building modern digital experiences with strategy, creativity, and technology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-initials">PB</span>
+        <span class="loader-line"></span>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <span class="loader-label">Loading Experience</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo magnetic" data-magnetic>
+        <span class="nav-logo-mark">PB</span>
+        <span class="nav-logo-dot"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Work</a></li>
+        <li><a href="#brand" class="nav-link" data-nav>Brand</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta magnetic" data-magnetic>
+        <span>Let's Talk</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Work</a></li>
+      <li><a href="#brand" class="mobile-link">Brand</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient-orb orb-1"></div>
+      <div class="hero-gradient-orb orb-2"></div>
+      <div class="hero-noise"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal-up">
+          <span class="eyebrow-dot"></span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line reveal-mask">Building modern</span>
+          <span class="hero-title-line reveal-mask italic">digital experiences</span>
+          <span class="hero-title-line reveal-mask">through strategy,</span>
+          <span class="hero-title-line reveal-mask">creativity &amp; technology</span>
+        </h1>
+        <p class="hero-sub reveal-up">
+          Startup Entrepreneur · Video Editor · AI/Analytics Learner · BSIT Student 
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#projects" class="btn-primary magnetic" data-magnetic>
+            <span class="btn-text">View My Work</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+          <a href="#contact" class="btn-ghost magnetic" data-magnetic>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-frame reveal-scale">
+          <div class="hero-frame-inner">
+            <div class="hero-img-placeholder">
+              <div class="hero-geo geo-1"></div>
+              <div class="hero-geo geo-2"></div>
+              <div class="hero-geo geo-3"></div>
+              <div class="hero-initials-large">PB</div>
+            </div>
+          </div>
+          <div class="hero-frame-label">
+            <span>Creative Technologist</span>
+            <span class="frame-year">©2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint reveal-up">
+      <div class="scroll-track">
+        <div class="scroll-thumb"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>Video Editing</span><span class="sep">·</span>
+        <span>Data Analytics</span><span class="sep">·</span>
+        <span>Agency Building</span><span class="sep">·</span>
+        <span>AI Learner</span><span class="sep">·</span>
+        <span>Content Creation</span><span class="sep">·</span>
+        <span>Strategic Thinking</span><span class="sep">·</span>
+        <span>Video Editing</span><span class="sep">·</span>
+        <span>Data Analytics</span><span class="sep">·</span>
+        <span>Agency Building</span><span class="sep">·</span>
+        <span>AI Learner</span><span class="sep">·</span>
+        <span>Content Creation</span><span class="sep">·</span>
+        <span>Strategic Thinking</span><span class="sep">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="about-inner container">
+      <div class="about-left">
+        <div class="about-img-wrap reveal-scale">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder">
+              <div class="about-geo-bg"></div>
+              <div class="about-initials">PB</div>
+            </div>
+          </div>
+          <div class="about-img-caption">
+            <span>Presidential Graduate School</span>
+            <span>BSIT · 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-label reveal-up">
+          <span class="label-num">01</span>
+          <span>About</span>
+        </div>
+        <h2 class="about-heading reveal-up">
+          A disciplined creative<br />
+          <em>building systems,</em><br />
+          brands &amp; bold work.
+        </h2>
+        <div class="about-bio reveal-up">
+          <p>
+            I'm Prabhat Bhurtel — a BSIT student at Presidential Graduate School in Kathmandu, 
+            simultaneously building an agency, editing video, learning AI &amp; data analytics, 
+            and thinking about how technology and creative strategy can intersect to create real impact.
+          </p>
+          <p>
+            I approach everything like a strategist. Whether it's a client video edit, a data dashboard, 
+            or building Assign Mentors from scratch — I operate with systems thinking, 
+            disciplined execution, and a high standard for quality.
+          </p>
+        </div>
+        <div class="about-stats reveal-up">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Editing</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5M+</span>
+            <span class="stat-label">Views Generated</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Ideas Building</span>
+          </div>
+        </div>
+        <div class="about-tags reveal-up">
+          <span class="tag">Startup Entrepreneur</span>
+          <span class="tag">Video editor</span>
+          <span class="tag">Freelancer</span>
+          <span class="tag">BSIT Student</span>
+          <span class="tag">Chess Thinker</span>
+          <span class="tag">MMA Practitioner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="skills-inner container">
+      <div class="section-header">
+        <div class="section-label reveal-up">
+          <span class="label-num">02</span>
+          <span>Capabilities</span>
+        </div>
+        <h2 class="section-heading reveal-up">
+          What I bring<br /><em>to the table.</em>
+        </h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-card-icon">✦</div>
+          <h3 class="skill-card-title">Creative</h3>
+          <ul class="skill-list">
+            <li>Video Editing</li>
+            <li>Content Creation</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="0.1">
+          <div class="skill-card-icon">⬡</div>
+          <h3 class="skill-card-title">Technical</h3>
+          <ul class="skill-list">
+            <li>Data Analytics</li>
+            <li>SQL , AI/ML Fundamentals</li>
+            <li>Python, HTML/CSS/JS</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="0.2">
+          <div class="skill-card-icon">◈</div>
+          <h3 class="skill-card-title">Business</h3>
+          <ul class="skill-list">
+            <li>Agency Building</li>
+            <li>Project Mentorship (AssignMentors)</li>
+            <li>Digital Strategy</li>
+            <li>Freelancing</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="0.3">
+          <div class="skill-card-icon">◎</div>
+          <h3 class="skill-card-title">Discipline</h3>
+          <ul class="skill-list">
+            <li>Analytical Chess Strategy</li>
+            <li>Deep Work Execution</li>
+            <li>Systems Thinking</li>
+            <li>Physical Conditioning (MMA)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="skills-marquee-wrap">
+        <div class="skills-marquee">
+          <div class="skills-marquee-track">
+            <span>Premiere Pro</span><span class="sep">—</span>
+            <span>After Effects</span><span class="sep">—</span>
+            <span>Python</span><span class="sep">—</span>
+            <span>Tableau</span><span class="sep">—</span>
+            <span>SQL</span><span class="sep">—</span>
+            <span>Figma</span><span class="sep">—</span>
+            <span>Excel</span><span class="sep">—</span>
+            <span>Capcut</span><span class="sep">—</span>
+            <span>Premiere Pro</span><span class="sep">—</span>
+            <span>After Effects</span><span class="sep">—</span>
+            <span>Python</span><span class="sep">—</span>
+            <span>Tableau</span><span class="sep">—</span>
+            <span>SQL</span><span class="sep">—</span>
+            <span>JavaScript</span><span class="sep">—</span>
+            <span>Figma</span><span class="sep">—</span>
+            <span>Excel</span><span class="sep">—</span>
+            <span>Capcut</span><span class="sep">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="projects-header container">
+      <div class="section-label reveal-up">
+        <span class="label-num">03</span>
+        <span>Selected Work</span>
+      </div>
+      <h2 class="section-heading reveal-up">
+        Projects that<br /><em>define the craft.</em>
+      </h2>
+    </div>
+    <div class="projects-scroll-container" id="projectsScroll">
+      <div class="projects-track" id="projectsTrack">
+
+        <div class="project-card magnetic-card" data-cursor-text="View">
+          <div class="project-card-inner">
+            <div class="project-visual pv-1">
+              <div class="project-overlay"></div>
+              <div class="project-visual-bg"></div>
+              <div class="project-num">01</div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Video Editing</span>
+              <h3 class="project-title">Cinematic Brand Reel</h3>
+              <p class="project-desc">High-impact brand story edit achieving 1M+ organic views across platforms.</p>
+              <div class="project-meta">
+                <span>Premiere Pro</span>
+                <span>After Effects</span>
+                <span>1M+ Views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic-card" data-cursor-text="View">
+          <div class="project-card-inner">
+            <div class="project-visual pv-2">
+              <div class="project-overlay"></div>
+              <div class="project-visual-bg"></div>
+              <div class="project-num">02</div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Data Analytics</span>
+              <h3 class="project-title">Sales Performance Dashboard</h3>
+              <p class="project-desc">Interactive business intelligence dashboard with predictive trend analysis.</p>
+              <div class="project-meta">
+                <span>Python</span>
+                <span>Tableau</span>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic-card" data-cursor-text="View">
+          <div class="project-card-inner">
+            <div class="project-visual pv-3">
+              <div class="project-overlay"></div>
+              <div class="project-visual-bg"></div>
+              <div class="project-num">03</div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Development</span>
+              <h3 class="project-title">Agency Landing System</h3>
+              <p class="project-desc">Premium conversion-optimized landing page for creative agency clients.</p>
+              <div class="project-meta">
+                <span>HTML/CSS/JS</span>
+                <span>GSAP</span>
+                <span>Framer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic-card" data-cursor-text="View">
+          <div class="project-card-inner">
+            <div class="project-visual pv-4">
+              <div class="project-overlay"></div>
+              <div class="project-visual-bg"></div>
+              <div class="project-num">04</div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Motion Design</span>
+              <h3 class="project-title">Social Media Motion Pack</h3>
+              <p class="project-desc">Complete motion design kit for high-growth social media brands.</p>
+              <div class="project-meta">
+                <span>After Effects</span>
+                <span>Motion</span>
+                <span>Viral Content</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic-card" data-cursor-text="View">
+          <div class="project-card-inner">
+            <div class="project-visual pv-5">
+              <div class="project-overlay"></div>
+              <div class="project-visual-bg"></div>
+              <div class="project-num">05</div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Data Analytics</span>
+              <h3 class="project-title">Market Trend Visualizer</h3>
+              <p class="project-desc">Data visualization project mapping consumer behavior patterns from raw datasets.</p>
+              <div class="project-meta">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="projects-scroll-hint container reveal-up">
+      <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="projectProgress"></div>
+      </div>
+      <span>Drag to explore</span>
+    </div>
+  </section>
+
+  <!-- BRAND: ASSIGN MENTORS -->
+  <section class="brand section" id="brand">
+    <div class="brand-inner container">
+      <div class="brand-left">
+        <div class="section-label reveal-up">
+          <span class="label-num">04</span>
+          <span>Brand</span>
+        </div>
+        <div class="brand-logo-reveal reveal-up">
+          <div class="brand-logo-mark">
+            <span class="brand-am">AM</span>
+          </div>
+        </div>
+        <h2 class="brand-heading reveal-up">
+          Assign<br /><em>Mentors</em>
+        </h2>
+        <p class="brand-tagline reveal-up">Where guidance meets growth.</p>
+      </div>
+      <div class="brand-right">
+        <div class="brand-desc reveal-up">
+          <p>
+            Assign Mentors is my educational brand on Instagram, created to help students who need real, reliable support — whether that's getting a website built, a programming project completed, or a business or English assignment done right.
+          </p>
+          <p>
+            Students simply share their criteria and requirements, and we handle the rest. Every project is delivered with a full guarantee: no plagiarism, no AI-detected content — just clean, original work that meets academic standards.
+          </p>
+        </div>
+        <div class="brand-pillars reveal-up">
+          <div class="pillar">
+            <span class="pillar-icon">◈</span>
+            <div>
+              <h4>Education</h4>
+              <p>Structured mentorship and curated learning pathways</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◉</span>
+            <div>
+              <h4>Strategy</h4>
+              <p>Digital growth systems for creators and businesses</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">✦</span>
+            <div>
+              <h4>Creative</h4>
+              <p>Premium content production and brand building</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALITY / DISCIPLINES -->
+  <section class="disciplines section">
+    <div class="disciplines-inner container">
+      <div class="section-label reveal-up">
+        <span class="label-num">05</span>
+        <span>Disciplines</span>
+      </div>
+      <div class="disciplines-grid">
+        <div class="discipline-block reveal-up" data-delay="0">
+          <div class="discipline-visual dv-1">
+            <div class="discipline-geo"></div>
+          </div>
+          <div class="discipline-text">
+            <h3>Chess</h3>
+            <p>Strategic patience. Seeing five moves ahead before acting.</p>
+            
+          </div>
+        </div>
+        <div class="discipline-block reveal-up" data-delay="0.1">
+          <div class="discipline-visual dv-2">
+            <div class="discipline-geo"></div>
+          </div>
+          <div class="discipline-text">
+            <h3>MMA</h3>
+            <p>Discipline, resilience, and pressure-tested decision making.</p>
+          </div>
+        </div>
+        <div class="discipline-block reveal-up" data-delay="0.2">
+          <div class="discipline-visual dv-3">
+            <div class="discipline-geo"></div>
+          </div>
+          <div class="discipline-text">
+            <h3>Deep Work</h3>
+            <p>Focused execution without distraction. Output over noise.</p>
+          </div>
+        </div>
+        <div class="discipline-block reveal-up" data-delay="0.3">
+          <div class="discipline-visual dv-4">
+            <div class="discipline-geo"></div>
+          </div>
+          <div class="discipline-text">
+            <h3>Systems</h3>
+            <p>Building repeatable, scalable frameworks for every area of life.</p>
+          </div>
+        </div>
+      </div>
+      <div class="disciplines-quote reveal-up">
+        <blockquote>
+          "Precision in process. Calm in execution.<br />
+          <em>Intelligence in everything.</em>"
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="testimonials-inner container">
+      <div class="section-label reveal-up">
+        <span class="label-num">06</span>
+        <span>Testimonials</span>
+      </div>
+      <h2 class="section-heading reveal-up">
+        What people<br /><em>are saying.</em>
+      </h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up" data-delay="0">
+          <div class="testimonial-content">
+            <p>"Prabhat's video work is some of the cleanest, most cinematic editing I've seen from a young creator. He understands storytelling on a deep level."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <span class="author-name">Rahul K.</span>
+              <span class="author-role">Brand Director</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" data-delay="0.1">
+          <div class="testimonial-content">
+            <p>"The data dashboard Prabhat delivered gave us insights we couldn't see before. Incredibly clear, beautifully designed, and technically solid."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div>
+              <span class="author-name">Sita P.</span>
+              <span class="author-role">Business Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" data-delay="0.2">
+          <div class="testimonial-content">
+            <p>"Working with Prabhat on our digital strategy was effortless. He thinks like a founder, executes like a professional, and communicates clearly."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">AM</div>
+            <div>
+              <span class="author-name">Aman M.</span>
+              <span class="author-role">Startup Founder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="contact-inner container">
+      <div class="section-label reveal-up">
+        <span class="label-num">07</span>
+        <span>Contact</span>
+      </div>
+      <h2 class="contact-heading reveal-up">
+        Let's build<br /><em>something</em><br />remarkable.
+      </h2>
+      <div class="contact-body">
+        <div class="contact-left reveal-up">
+          <p class="contact-sub">
+            Whether it's a video project, a data challenge, a web build, 
+            or an agency inquiry — I'm open to the right conversations.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:prabhatbhurtel9@gmail.com" class="contact-link magnetic" data-magnetic>
+              <span class="cl-label">Email</span>
+              <span class="cl-value">prabhatbhurtel9@gmail.com</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="contact-link magnetic" data-magnetic>
+              <span class="cl-label">Instagram</span>
+              <span class="cl-value">@prabhatbhurtel</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/prabat-bhurtel-1506542b3/?skipRedirect=true" target="_blank" class="contact-link magnetic" data-magnetic>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-value">Prabhat Bhurtel</span>
+              <span class="cl-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal-up">
+          <form class="contact-form" id="contactForm" onsubmit="handleForm(event)">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-input" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">What are you working on?</label>
+              <textarea class="form-textarea" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit magnetic" data-magnetic>
+              <span class="btn-text">Send Message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">PB</span>
+          <span class="footer-dot"></span>
+          <span class="footer-tagline">Creative Technologist</span>
+        </div>
+        <div class="footer-assign">
+          <span>Part of</span>
+          <strong>Assign Mentors</strong>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Prabhat Bhurtel. All rights reserved.</span>
+        <div class="footer-socials">
+          <a href="https://instagram.com" target="_blank" class="footer-social">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" class="footer-social">LinkedIn</a>
+          <a href="mailto:prabhat@assignmentors.com" class="footer-social">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger + Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
